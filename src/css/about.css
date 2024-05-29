@@ -1,0 +1,14 @@
+.about {
+  margin-top: 100px;
+  padding: 0 16px;
+}
+
+.about-heading {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.about-desc p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}

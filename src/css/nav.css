@@ -1,0 +1,39 @@
+.navbar {
+  margin: 40px 0;
+}
+
+.navbar-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.brand {
+  font-size: 2rem;
+  color: var(--themeClr);
+}
+
+.navbar-link {
+  margin: 0 16px;
+  font-size: 1.2rem;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-link:hover {
+  color: var(--themeClr);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-center {
+    display: block;
+  }
+  .navbar-link {
+    margin: 10px 0;
+    display: flex;
+  }
+}
