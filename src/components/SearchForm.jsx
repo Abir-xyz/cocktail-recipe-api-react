@@ -1,8 +1,15 @@
 import '../css/home.css';
-
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import { useGlobalContext } from '../GlobalContext';
 
 const SearchForm = () => {
+  const { SetFetchByInput } = useGlobalContext();
+  const searchValue = useRef();
+
+  const searchDrink = () => {
+    SetFetchByInput(searchValue.current.value);
+  };
+
   return (
     <section className='form-wrapper'>
       <form className='form'>
@@ -10,6 +17,8 @@ const SearchForm = () => {
           type='text'
           placeholder='Search your cocktail'
           className='form-input'
+          ref={searchValue}
+          onChange={searchDrink}
         />
       </form>
     </section>
